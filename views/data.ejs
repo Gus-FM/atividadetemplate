@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+      <h1>Página: /data</h1>
+      <p>Dados recebidos via POST:</p>
+      <ul>
+        <% Object.keys(data).forEach(function(key) { %>
+          <li><strong><%= key %>:</strong> <%= data[key] %></li>
+        <% }); %>
+      </ul>
+      <p><a href="/">Voltar</a></p>
+<%- include('partials/footer') %>

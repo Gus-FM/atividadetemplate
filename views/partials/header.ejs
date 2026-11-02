@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <title><%= title %> - Atividade Router</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="<%= page === '/' ? 'active' : '' %>">Início</a>
+      <a href="/about" class="<%= page === '/about' ? 'active' : '' %>">Sobre</a>
+      <a href="/users/signin" class="<%= page === '/users/signin' ? 'active' : '' %>">Entrar</a>
+      <a href="/users/signup" class="<%= page === '/users/signup' ? 'active' : '' %>">Cadastro</a>
+    </nav>
+    <main>

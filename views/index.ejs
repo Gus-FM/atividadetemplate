@@ -1,0 +1,11 @@
+<%- include('partials/header') %>
+      <h1>Página: /</h1>
+      <p>Bem-vindo à Atividade Router: o exercício da Aula 6 refeito com Express Router, Express Generator e templates EJS.</p>
+
+      <h2>Enviar dados (POST /data)</h2>
+      <form action="/data" method="post">
+        <label>Nome <input type="text" name="nome" required></label>
+        <label>Mensagem <input type="text" name="mensagem"></label>
+        <button type="submit">Enviar</button>
+      </form>
+<%- include('partials/footer') %>
